@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Horizon Explorers</title>
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.head {
+    border: none;
+    height: 340px;
+    background-image: url("https://image.shutterstock.com/image-vector/outline-delhi-skyline-blue-buildings-260nw-385681696.jpg");
+    background-position: 81px -158px;
+    background-size: cover;
+}
+.fixed {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0%;
+    position: fixed;
+    z-index: 100;
+}
+.box {
+    display: block;
+    width: 1537px;
+    border: none;
+    height: 86px;
+    background-color: #9681EB;
+    opacity: 0.5;
+}
+.search input {
+    display: flex;
+    position: relative;
+    left: 452px;
+    top: -86px;
+    width: 460px;
+    height: 37px;
+    background-color: #45CFDD;
+    opacity: 1;
+    border: none;
+    border-radius: 50px;
+    opacity: 0.8;
+    color: #7700ff;
+}
+.gift a {
+    position: relative;
+    left: 1132px;
+    top: -97px;
+    font-size: 25px;
+    color: #45CFDD;
+}
+.login a {
+    position: relative;
+    left: 1333px;
+    top: -130px;
+    font-size: 25px;
+    color: #45CFDD;
+}
+.image {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left: 25px;
+    top: -51px;
+    font-size: x-large;
+    color: #45CFDD;
+}
+.items {
+    position: relative;
+    left: 25px;
+    top: -29px;
+}
+.bar {
+    color: #7700ff;
+    font-size: 100px;
+    position: relative;
+    left: 166px;
+    top: 103px;
+}
+.hs {
+    color: #6a2bb2;
+    font-size: 77px;
+    position: relative;
+    left: 221px;
+    top: -38px;
+}
+.text {
+    position: relative;
+    left: -32px;
+    top: 72px;
+}
+.blackbox {
+    width: 1200px;
+    height: 157px;
+    border: none;
+    position: relative;
+    left: 167px;
+    top: 49px;
+    border-radius: 25px;
+    background-color: #45CFDD;
+}
+.circle img{
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -91px;
+left: 47%;
+
+}
+.txt {
+    position: relative;
+    left: 747px;
+    z-index: 100;
+    top: -89px;
+    color: #6a2bb2;
+}
+main {
+    height: 6560px;
+    background-color: #6527BE;
+}
+.main_boundary {
+    width: 1448px;
+    height: 5711px;
+    position: relative;
+    left: 44px;
+    top: 168px;
+}
+.content {
+    width: 789px;
+    height: 5670px;
+    position: relative;
+    left: 44px;
+    top: 22px;
+    justify-content: space-evenly;
+}
+footer {
+    padding: 20px;
+    position: fixed;
+    bottom: 0%;
+    background-color: #A7EDE7;
+    opacity: 1;
+    width: 100vw;
+    text-align: center;
+    color: #7700ff;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    row-gap: 70px;
+    column-gap: 182px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container {
+    width: 100%;
+    border-radius: 3%;
+    height: 100%;
+    background-color: #9681EB;
+}
+img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 3%;
+    transition: all;
+    transition-duration: 1.2s;
+    cursor: pointer;
+    user-select: none;
+}
+img:hover {
+    scale: 1.08;
+    filter: brightness(100%);
+}
+#tm {
+    text-align: justify;
+}
+#rf {
+    text-align: justify;
+    font-size: 15px;
+}
+#hm {
+    text-align: justify;
+    font-size: 14px;
+}
+#ig {
+    text-align: justify;
+    font-size: 15px;
+}
+#gt {
+    text-align: justify;
+}
+#cm {
+    text-align: justify;
+}
+#got {
+    text-align: justify;
+    font-size: 14px;
+}
+#qm {
+    text-align: justify;
+}
+#jb {
+    text-align: justify;
+    font-size: 15px;
+}
+.container {
+    height: fit-content;
+}
+main {
+    height: fit-content;
+    padding: 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    color: white;
+    height: 100%;
+    font-family: Cera-CY;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        grid-template-columns: auto auto;
+        column-gap: 40px;
+    }
+    .circle {
+        display: none;
+    }
+    .container {
+        height: fit-content;
+        position: relative;
+        top: -170px;
+    }
+    .hs big{
+        font-size: 20px;
+    }
+    .txt {
+        display: none;
+    }
+    .head {
+        border: none;
+        height: 340px;
+        background-image: url("https://image.shutterstock.com/image-vector/outline-delhi-skyline-blue-buildings-260nw-385681696.jpg");
+        background-position: 15px -277px;
+        background-size: cover;
+    }
+    .fixed {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0%;
+        position: fixed;
+        z-index: 100;
+    }
+    .box {
+        display: block;
+        width: 1537px;
+        border: none;
+        height: 86px;
+        background-color: #9681EB;
+        opacity: 0.5;
+    }
+    .gift a {
+       display: none;
+    }
+    .login a {
+    display: none;
+    }
+    .search input {
+        display: flex;
+        position: relative;
+        left: 341px;
+        top: -90px;
+        width: 175px;
+        height: 37px;
+        background-color: #45CFDD;
+        opacity: 1;
+        border: none;
+        border-radius: 50px;
+        opacity: 0.8;
+        color: #7700ff;
+    }
+    .image {
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        left: 25px;
+        top: -51px;
+        font-size: x-large;
+        color: #45CFDD;
+    }
+    .bar {
+        color: #7700ff;
+        font-size: 75px;
+        position: relative;
+        left: 52px;
+        top: 128px;
+    }
+    .hs {
+        font-size: 55px;
+position: relative;
+left: 98px;
+top: 31px;
+    }
+    .text {
+        position: relative;
+        left: -32px;
+        top: 72px;
+    }
+    .blackbox {
+        display: none;
+    }
+    .content {
+        width: 789px;
+        height: 5670px;
+        position: relative;
+        left: 44px;
+        top: 22px;
+        justify-content: space-evenly;
+    }
+    footer {
+        padding: 20px;
+        position: fixed;
+        bottom: 0%;
+        background-color: #A7EDE7;
+        opacity: 1;
+        width: 100vw;
+        text-align: center;
+        color: #7700ff;
+    }
+    .img-container {
+        width: 100%;
+        border-radius: 3%;
+        height: 100%;
+        background-color: #9681EB;
+    }
+    img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 3%;
+        transition: all;
+        transition-duration: 1.2s;
+        cursor: pointer;
+        user-select: none;
+    }
+    img:hover {
+        scale: 1.08;
+        filter: brightness(100%);
+    }
+    .wrapper {
+        color: white;
+        height: 100%;
+        font-family: Cera-CY;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+main {
+    height: fit-content;
+    padding: 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tm {
+    text-align: justify;
+font-size: 14px;
+}
+#rf {
+    text-align: justify;
+    font-size: 13px;
+}
+#hm {
+    text-align: justify;
+
+    font-size: 13px;
+}
+#ig {
+    text-align: justify;
+    font-size: 13px;
+}
+#gt {
+    text-align: justify;
+}
+#cm {
+    text-align: justify;
+}
+#got {
+    text-align: justify;
+    font-size: 13px;
+}
+#qm {
+    text-align: justify;
+    font-size: 13px;
+}
+
+#jb {
+    text-align: justify;
+    font-size: 13px;
+}
+}
+@media screen and (max-width:300px) {
+    body {
+        overflow-x: hidden;
+    }
+    .circle {
+        display: none;
+    }
+    .container {
+        grid-template-columns: auto;
+    }
+    .txt {
+        display: none;
+    }
+  
+    .head {
+        border: none;
+        height: 340px;
+        background-image: url("https://image.shutterstock.com/image-vector/outline-delhi-skyline-blue-buildings-260nw-385681696.jpg");
+        background-position: -125px -277px;
+        background-size: cover;
+    }
+    .fixed {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0%;
+        position: fixed;
+        z-index: 100;
+    }
+    .box {
+        display: block;
+        width: 1537px;
+        border: none;
+        height: 86px;
+        background-color: #9681EB;
+        opacity: 0.5;
+    }
+    .gift a {
+       display: none;
+    }
+    .login a {
+    display: none;
+    }
+    .search input {
+        display: flex;
+        position: relative;
+        left: 298px;
+        top: -90px;
+        width: 103px;
+        height: 37px;
+        background-color: #45CFDD;
+        opacity: 1;
+        border: none;
+        border-radius: 50px;
+        opacity: 0.8;
+        color: #7700ff;
+    }
+    .image {
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        left: 25px;
+        top: -51px;
+        font-size: x-large;
+        color: #45CFDD;
+    }
+    .bar {
+        color: #7700ff;
+        font-size: 38px;
+        position: relative;
+        left: 52px;
+        top: 128px;
+    }
+.hs {
+        font-size: 27px;
+        position: relative;
+        left: 71px;
+        top: 74px;
+    }
+    .text {
+        position: relative;
+        left: -32px;
+        top: 139px;
+    }
+    .blackbox {
+        display: none;
+    }
+    .content {
+        width: 789px;
+        height: 5670px;
+        position: relative;
+        left: 44px;
+        top: 22px;
+        justify-content: space-evenly;
+    }
+    footer {
+        padding: 20px;
+        position: fixed;
+        bottom: 0%;
+        background-color: #A7EDE7;
+        opacity: 1;
+        width: 100vw;
+        text-align: center;
+        color: #7700ff;
+    } 
+.img-container {
+        width: 100%;
+        border-radius: 3%;
+        height: 100%;
+        background-color: #9681EB;
+    }
+    img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 3%;
+        transition: all;
+        transition-duration: 1.2s;
+        cursor: pointer;
+        user-select: none;
+    }  
+    img:hover {
+        scale: 1.08;
+        filter: brightness(100%);
+    }
+    .wrapper {
+        color: white;
+        height: 100%;
+        font-family: Cera-CY;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+main {
+    height: fit-content;
+    padding: 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tm {
+    text-align: justify;
+font-size: 11px;
+}
+#rf {
+    text-align: justify;
+    font-size: 11px;
+}
+#hm {
+    text-align: justify;
+    font-size: 11px;
+}
+#ig {
+    text-align: justify;
+    font-size: 11px;
+}
+#gt {
+    text-align: justify;
+    font-size: 12px;
+}
+#cm {
+    text-align: justify;
+    font-size: 11px;
+}
+#got {
+    text-align: justify;
+    font-size: 9px;
+}
+#qm {
+    text-align: justify;
+    font-size: 9px;
+}
+#jb {
+    text-align: justify;
+    font-size: 9px;
+}
+}
+    </style>
+</head>
+<body>
+    <header>
+        <section class="head">
+            <nav>
+                <div class="fixed">
+                    <!-- fixed part  -->
+                    <div class="box">
+
+                    </div>
+                    <div class="image">
+                       <big><b>Horizon Explorers</b></big>
+                    </div>
+                    <div class="search">
+                        <form action="">
+                            <input type="text"  placeholder="     Search.....">
+                        </form>
+                    </div>
+                    <div class="items">
+                        <div class="gift">
+                            <a href="#">
+                                <small>
+                                    <sub><b>Gift an Experience</b></sub>
+                                </small>
+                            </a>
+                        </div>
+                        <div class="login">
+                            <a href="#">
+                                <small>
+                                    <sub><b>Login</b></sub>
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 10 Historical places  -->
+            <div class="text">
+                <div class="bar">
+                    <big>|</big>
+                </div>
+                <!-- <div class="number">
+                    <big>10</big>
+                </div> -->
+                <div class="hs">
+                    <big>Historial Places
+                    </big>
+                </div>
+            </div>
+            <!-- box connecting header and main  -->
+            <div class="blackbox">
+               
+            </div>
+            <div class="circle">
+             <a href="#">   <img src="https://blog.thomascook.in/wp-content/uploads/2017/01/fairypools.jpg" alt="Image" ></a>
+            </div>
+            <div class="txt">
+                <small><sub><b>Horizon Explorers</b></sub></small>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <!-- taj mahal  -->
+                <div class="img-container" id="tm"><a href="https://en.wikipedia.org/wiki/Taj_Mahal"><img src="https://cdn.vectorstock.com/i/preview-1x/36/97/taj-mahal-vector-1043697.webp" alt="" width="400px" height="250px"></a>
+                <p> The Taj Mahal of Agra dates back to the 17th century. It was built by Shah Jahan, the Mughal emperor, in the memory of Mumtaz Mahal.</p></div>
+                <!-- red fort -->
+                <div class="img-container" id="rf"><a href="VS"><img src="https://image.shutterstock.com/image-vector/red-fort-new-dehli-india-260nw-1920440423.jpg" alt="" width="400px" height="250px"></a><p>Red Fort, also called Lal Qalʿah.Mughal fort in Old Delhi,India. It was built by Shah Jahān in the mid-17th century and remains a major tourist attraction.</p></div>
+                <!-- hawa mahal  -->
+                <div class="img-container" id="hm"><a href="https://en.wikipedia.org/wiki/Hawa_Mahal"><img src="https://img.freepik.com/premium-vector/vector-illustration-hawa-mahal-palace-city-jaipur-india-hawa-mahal-image-hawa-mah_830469-104.jpg?size=626&ext=jpg&ga=GA1.1.1581360173.1689056867&semt=ais" alt="" width="400px" height="250px"></a><p>Hawa Mahal is a 5-storey structure that overlooks the bustling streets of Jaipur. It has also been made in a blend of the Rajput, Mughal and Islamic styles of architecture.</p></div>
+                <!-- India gate  -->
+                <div class="img-container" id="ig"><a href="https://en.wikipedia.org/wiki/India_Gate"><img src="https://www.shutterstock.com/image-vector/india-monument-qutub-minar-red-600w-2214899145.jpg" alt="" width="400px" height="250px"></a><p> India Gate possibly ranks at the top. An iconic landmark of Delhi, this sandstone-granite arch gate is amongst the largest war memorials in all of India</p></div>
+                <!-- Golden temple  -->
+                <div class="img-container" id="gt"><a href="https://en.wikipedia.org/wiki/Golden_Temple"><img src="https://image.shutterstock.com/image-vector/vector-sketch-color-golden-temple-260nw-720938503.jpg" alt="" width="400px" height="250px"></a><p> Golden temple is the most important religious site for the Sikhs, and celebrates humanity, tranquillity and brotherhood.</p></div>
+                <!-- charminar -->
+                <div class="img-container" id="cm"><a href="https://en.wikipedia.org/wiki/Charminar"><img src="https://www.shutterstock.com/image-vector/charminar-hyderabad-illustration-sketch-600w-1132432067.jpg" alt="" width="400px" height="250px"></a><p>Charminar is a square shaped structure with four pillars and intricate carvings was built in honour of his wife, Bhagmat
+                </p></div>
+                <!-- gateway of india  -->
+                <div class="img-container" id="got"><a href="https://en.wikipedia.org/wiki/Gateway_of_India"><img src="https://www.shutterstock.com/image-vector/vintage-poster-gateway-india-mumbai-600w-421146559.jpg" alt="" width="400px" height="250px"></a><p>The Gateway of India is an arch-monument in the city of Mumbai India. It was erected to commemorate the landing of the first British monarch to visit India</p></div>
+                <!-- Qutub minar  -->
+                <div class="img-container" id="qm"><a href="https://en.wikipedia.org/wiki/Qutb_Minar"><img src="https://www.shutterstock.com/image-vector/india-monument-qutub-minar-red-600w-2214899147.jpg" alt="" width="400px" height="250px"></a><p>Qutub Minar, also known as the Victory Tower, is the tallest brick minaret in the whole world, standing tall at a height of 72.5 metres.</p></div>
+                <!-- jallainwala bagh  -->
+                <div class="img-container" id="jb"><a href="https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre"><img src="https://www.shutterstock.com/image-vector/jallianwala-bagh-massacre-creative-ad-600w-2138390617.jpg" alt="" width="400px" height="250px"></a><p>Jallianwala Bagh is a public garden, which is home to a memorial that commemorates the massacre of people celebrating Baisakhi by the British.</p></div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+<section class="ft">
+    <div class="fix">
+        <div class="fb">
+            <div class="design">
+                <big><b>DESIGNED AND DEVELOPED BY PARTH RAJPUT</b></big>
+            </div>
+        </div>
+       
+    </div>
+    
+</section>
+    </footer>
+</body>
+</html>
