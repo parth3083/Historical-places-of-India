@@ -2,7 +2,7 @@
 <br>
 The website live link
 <br>
-https://implementation-of-kruskal-and-prims.netlify.app/
+https://historical-places-of-india.netlify.app/
 <br>
 <br>
 It is basic webpage built using only html and css.
